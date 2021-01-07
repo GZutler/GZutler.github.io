@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posdravlator 3.0</title>
+    <link href="posdr-style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header card">
+        <h1>Поздравлятор 3.0.</h1>
+        <p class="not-important">Нажмите <a href="senia_birthday.exe">сюда</a>, чтобы скачать поздравлятор 1.0.<br>
+        Нажмите <a href="grandfather70years.exe">сюда</a>, чтобы скачать поздравлятор 2.0.</p>
+    </div>
+    <div class="inp card">
+        <h2>Введите свои данные и получите время до следующего дня рождения.</h2>
+        <form method="post" class="clearfix">
+            <div class="form-container year">
+                <label for="year">
+                    Введите год своего рождения<br>
+                    <input type="text" name="year" id="year">
+                </label>
+            </div>
+            <div class="form-container date1">
+                <label for="date1">
+                    Введите дату своего рождения<br>
+                    <input type="text" name="date1" id="date1">
+                </label>
+            </div>
+            <div class="form-container month">
+                <label for="month">
+                    Введите месяц своего рождения<br>
+                    <input type="text" name="month" id="month">
+                </label>
+            </div>
+
+        </form>
+        <div class="alert hidden">
+            <p class="alert-message">Введите валидную дату.</p>
+        </div>
+        <div class="result">
+            <p>Ваш день рождения будет <span class="date-of-next-birthday"></span><br>
+            До него осталось <span class="to-the-next-birthday"></span></p>
+        </div>
+    </div>
+    <div class="card posdr-card">
+        <h2>Поздравляем с днём рождения (<span class="ages"></span> лет)</h2>
+        <div class="posdr">
+            <div class="cake"></div>
+            <div class="candles">
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="posdr-script.js"></script>
+</body>
+</html>

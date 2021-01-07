@@ -1,0 +1,195 @@
+body {
+    font-family: "Tahoma", sans-serif;
+    margin: 0;
+    background-color: bisque;
+}
+
+div.card {
+    background-color: white;
+    box-shadow: black 0 0 5px;
+    width: calc(100% - 60px);
+    margin: 30px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.not-important {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    color: grey;
+    padding-bottom: 50px;
+}
+
+.not-important a {
+    color: darkslategrey;
+    transition: color 0.3s;
+}
+
+.not-important a:hover {
+    color: darkgrey;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    display: inline-block;
+    width: 100%
+}
+
+/*.date {*/
+/*    padding-top: 20px;*/
+
+/*}*/
+
+form {
+    display: block;
+}
+
+.form-container {
+    border: 1px solid bisque;
+    padding-left: 30px;
+    width: 300px;
+    height: 75px;
+    margin-left: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input[type="text"] {
+    border: 3px solid saddlebrown;
+    padding: 10px;
+    width: 50px;
+    height: 10px;
+    horiz-align: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.result {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.date-of-next-birthday,
+.to-the-next-birthday {
+    border: 2px solid burlywood;
+    min-width: 80px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.cake {
+    background-image: url("pirog.png");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 80%;
+    /*background-color: red;*/
+    /*position: absolute;*/
+    /*top: 100px;*/
+    /*left: 0;*/
+    /*border: 5px solid black;*/
+    height: 400px;
+    background-size: cover;
+    background-position: 10px;
+    transform: translate(120px, 40px);
+
+}
+
+.posdr {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+    transition: transform 2s ease-in-out;
+
+}
+
+.posdr.active {
+    transform: rotate(180deg) translateY(-20px);
+    transition: all 2s ease-in-out;
+
+}
+
+
+
+/*.cake-card {*/
+/*    min-height: 800px;*/
+/*}*/
+
+.candles {
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(10px);
+    width: 80%;
+    margin: auto;
+}
+
+.candle {
+    width: 25px;
+    height: 200px;
+    background-image: url("candle-gorit.png");
+    transition: background-image 0.5s;
+}
+
+.candle.another{
+    background-image: url("candle-saduved.png");
+}
+
+.posdr-card{
+    overflow: hidden;
+    display: none;
+}
+
+.posdr-card.active {
+    display: block;
+}
